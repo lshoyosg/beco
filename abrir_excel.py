@@ -1,8 +1,8 @@
 import pandas as pd
+import os
 
 # Ruta al archivo Excel
-excel_path = "DataBase/BECO_1975_2023_web.xlsx"
-
+excel_path = os.path.join("datos", "BECO_1975_2023_web.xlsx")
 
 # Cargar todas las hojas del archivo Excel en un diccionario de DataFrames
 all_sheets = pd.read_excel(excel_path, sheet_name=None)
